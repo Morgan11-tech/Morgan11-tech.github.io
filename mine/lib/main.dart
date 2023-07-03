@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mine/home_screen.dart';
+import 'package:mine/main_page.dart';
 
 import 'colors/colors.dart';
 import 'landing_page.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           fontFamily: 'Montserrat'
       ),
-        home: const MyHomePage(),
+      home: HomeScreen(),
     );
   }
 }
@@ -33,15 +35,13 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: AppColors.background,
       body: Center(
         child: SingleChildScrollView(
-            child: Column(
-              children: const <Widget>[
-                LandingPage(),
-
-              ],
-            ),
+          child: Column(
+            children: const <Widget>[
+              LandingPage(),
+            ],
           ),
+        ),
       ),
-
     );
   }
 }
