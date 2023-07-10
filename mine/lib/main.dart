@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Portfolio',
       theme: ThemeData(
-          fontFamily: 'Montserrat'
+          fontFamily: 'San Francisco'
       ),
       home: HomeScreen(),
     );
